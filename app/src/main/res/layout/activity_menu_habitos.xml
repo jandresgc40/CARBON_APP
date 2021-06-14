@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_app_2"
+    tools:context=".Menu_habitos">
+
+    <TextView
+        android:id="@+id/tvRespuesta"
+        android:layout_width="345dp"
+        android:layout_height="103dp"
+        android:fontFamily="@font/montserrat"
+        android:gravity="center"
+        android:text="Hábitos"
+        android:textColor="@android:color/background_light"
+        android:textSize="80sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.077" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="74dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvRespuesta">
+
+        <Button
+            android:id="@+id/btnTransporte"
+            android:layout_width="150dp"
+            android:layout_height="170dp"
+            android:background="@drawable/icono_habitos_transporte"
+            android:onClick="abrirTransporte"
+            android:text=" "
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnDieta"
+            android:layout_width="150dp"
+            android:layout_height="170dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
+            android:background="@drawable/icono_habitos_alimentacion"
+            android:onClick="abrirDieta"
+            app:layout_constraintStart_toEndOf="@+id/btnTransporte"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="150dp"
+            android:layout_height="170dp"
+            android:layout_marginTop="132dp"
+            android:background="@drawable/icono_habitos_vivienda"
+            android:onClick="abrirHogar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/btnTransporte" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="358dp"
+        android:layout_height="88dp"
+        android:layout_marginTop="76dp"
+        android:background="@color/common_google_signin_btn_text_light_default"
+        android:fontFamily="@font/montserrat"
+        android:gravity="center"
+        android:text="Aquí podrás seleccionar tus hábitos para hacer el cálculo de tu huella de carbono!  "
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+</androidx.constraintlayout.widget.ConstraintLayout>

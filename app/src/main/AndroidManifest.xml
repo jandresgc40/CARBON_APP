@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.carbon">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon_carbon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/icon_carbon_rounded"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.NoActionBar">
+        <activity android:name=".Administradores"></activity>
+        <activity android:name=".Incidencias" />
+        <activity android:name=".DietaVegetariana" />
+        <activity
+            android:name=".DesgloseHuella"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CuestionarioHogar2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Ranking"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PantallaConsejo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".GuiaLista"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CuestionarioHogar"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DietaOmnivora"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MenuDieta"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CuestionarioTransporte"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CuestionarioTransporte2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Menu_habitos"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Login"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

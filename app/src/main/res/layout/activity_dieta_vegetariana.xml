@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_app_2"
+    tools:context=".DietaVegetariana" >
+
+    <TextView
+        android:id="@+id/textViewTitulo"
+        android:layout_width="349dp"
+        android:layout_height="194dp"
+        android:layout_marginTop="32dp"
+        android:background="@color/common_google_signin_btn_text_light_focused"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Indica los alimentos de origen animal que consumes"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout4"
+        android:layout_width="295dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTitulo">
+
+        <Button
+            android:id="@+id/button9"
+            android:layout_width="150dp"
+            android:layout_height="170dp"
+            android:background="@drawable/icono_habitos_alimentacion_vegetariana_huevos"
+            android:onClick="seleccionarHuevos"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.717"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/button11"
+            android:layout_width="150dp"
+            android:layout_height="170dp"
+            android:layout_marginTop="132dp"
+            android:background="@drawable/icono_habitos_alimentacion_vegetariana_lacteos"
+            android:onClick="seleccionarLacteos"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.179"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/button9" />
+
+        <CheckBox
+            android:id="@+id/checkBoxHuevos"
+            style="@style/Widget.AppCompat.CompoundButton.CheckBox"
+            android:layout_width="42dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="64dp"
+            android:checked="true"
+            app:layout_constraintEnd_toStartOf="@+id/button9"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/button9" />
+
+        <CheckBox
+            android:id="@+id/checkBoxLacteos"
+            android:layout_width="33dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="69dp"
+            android:checked="true"
+            app:layout_constraintStart_toEndOf="@+id/button11"
+            app:layout_constraintTop_toTopOf="@+id/button11" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/button12"
+        android:layout_width="75dp"
+        android:layout_height="88dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/boton_continuar"
+        android:onClick="continuar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout4" />
+</androidx.constraintlayout.widget.ConstraintLayout>
